@@ -1,0 +1,87 @@
+<!-- Веб-сайт ресторану: -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Vladbot"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ресторан "Vladbot"</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#order">Замовити онлайн</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Наше меню</h2>
+        <ul>
+            <li>Салат «Грецький»  - 100 грн</li>
+            <li>Овочі-гриль - 150 грн</li>
+            <li>Бульйон з кнелями  - 160 грн</li>
+            <li>Кнеля із телятини  - 200 грн</li>
+            <li>Форель в солі  - 80 грн</li>
+            <li>Асорті м’ясне  - 120 грн</li>
+            <li>Картопля печена з салом - 130 грн</li>
+            <li>Буженина домашня - 180 грн</li>
+            <li>Салат по-селянськи - 220 грн</li>
+            <li>Тар-тар із тунця - 250 грн</li>
+            <li>Мільфей з телячої вирізки - 350 грн</li>
+            <li>Борщ  - 90 грн</li>
+            <li>«Крем-Брюле»  - 100 грн</li>
+            <li>Салат з копченим вугром - 110 грн</li>
+            <li>Картопля фрі - 70 грн</li>
+            <li>«Цинандалі» біле, 0,75 л - 40 грн</li>
+            <li>«Хванчкара» червоне, 0,75 л.  - 30 грн</li>
+            <li>«Бордо Суперіор» 0,75 л.  - 50 грн</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-container">
+            <img src="img/caption.jpg" alt="">
+            <img src="img/shutterstock_507078310_1576510459-e1576510491720-630x315.jpg" alt="">
+            <img src="img/27cb479d86e77000c0b137990610d827.jpeg" alt="">
+            <img src="img/ffe54e61910862c026afa3482621bdf0.jpeg" alt="">
+            <img src="img/shokoladnaia-panna-k.jpg" alt="">
+            <img src="img/56fd15eac5a25727aac65da15926d34f.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Адреса: вул. Проектна-16, 10, Рівне</p>
+        <p>Телефон: +38 (097) 262 94 62</p>
+        <p>Email: vladsidlar434.com.ua</p>
+    </section>
+
+    <section id="order">
+        <h2>Замовити онлайн</h2>
+        <form action="order.php" method="post">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="order-details">Деталі замовлення:</label>
+            <textarea id="order-details" name="order-details" required></textarea>
+
+            <button type="submit">Відправити замовлення</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> © 2024 Ресторан "Vladbot".</p>
+    </footer>
+</body>
+</html>
